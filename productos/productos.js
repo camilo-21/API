@@ -81,3 +81,8 @@ function eliminarpro() {
             .then(json=>console.log(json))
 
 }
+
+function listar(){
+
+    const input = document.getElementById('listar')
+}
