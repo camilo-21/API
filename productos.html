@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="producto.css" title="style">
+    <title>productos</title>
+</head>
+
+<body>
+
+    <form>
+        <button type="submit" class="mt-2" id="botonpro">BUSCAR</button>
+        <input type="text" class="form-control" placeholder="Producto" id="inputpro"> <br>
+    </form>
+    <div class="producto-container mt-4 produc">
+        <h3>PRODUCTOS</h3>
+        <div class="linea"></div>
+        <h3 id="nom"></h3>
+        <div class="linea2"></div>
+        <img id="imag" src="">
+        <div class="container">
+            <h4>VALOR:</h4>
+            <h2 id="precio"></h2>
+            <div class="linea"></div>
+            <h4> DESCRIPCION:</h4>
+            <p id="descripcion"></p>
+            <div class="linea"></div>
+            <h4> CATEGORIA:</h4>
+            <h4 id="categoria"></h4>
+            <div class="linea"></div>
+        </div>
+        <br>
+    </div>
+    <div class="producto-container mt-4 produc">
+        <h3>LISTAR PRODUCTOS</h3>
+        <div class="linea2"></div>
+        <div class="container">
+            <button type="submit" class="mt-2" id="botonpro">BUSCAR</button>
+            <input type="text" class="form-control" placeholder="Producto" id="inputpro"> <br>
+            <table>
+                <thead>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Descripcion</th>
+                    <th>Categoria</th>
+                </thead>
+            </table>
+        </div>
+        <br>
+    </div>
+    <button type="submit" class="mt-2" onclick="añadirpro()">AÑADIR</button><br><br>
+    <button type="submit" class="mt-2" onclick="actualizarpro()">ACTUALIZAR</button><br><br>
+    <button type="submit" class="mt-2" onclick="eliminarpro()">ELIMINAR</button>
+    <script src="productos.js"></script>
+</body>
+
+</html>
